@@ -1,0 +1,62 @@
+/* create a fluid two column layout */
+:root {
+    --border-color: #ef9c00;
+}
+
+/* default styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Spinnaker", sans-serif;
+}
+html {
+    background-color: #facd8a;
+}
+h2 {
+    padding: 1em;
+}
+body {
+    width: 90%;
+    background-color: whitesmoke;
+    margin: 15px auto;
+    border: 1px solid #000000;
+}
+
+/* header styling */
+header {
+    border-bottom: 2px solid var(--border-color);
+}
+header img {
+    float: left;
+    width: 60px;
+    margin: auto 0;
+    padding: .5em;
+    /* display: block; */
+    border-radius: 16px;
+    opacity: .75;
+}
+main {
+    width: 66%;
+    height: 350px;
+    float: right;
+    border-left: 2px solid var(--border-color);
+    /* padding: 0 8px; */
+    /* border-collapse:separate; */
+
+}
+main > p {
+    padding: 0 1em;
+}
+aside {
+    width: 33%;
+    height: 350px;
+    float: left;
+    background: url("images/ghost-trees.jpg");
+    background-size: cover;
+}
+
+footer {
+    clear: both;
+    border-top: 2px solid var(--border-color);
+    height: 15%;
+}

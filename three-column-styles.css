@@ -1,0 +1,46 @@
+/* create a fluid three column layout */
+:root {
+    --border-color: #ef9c00;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: #facd8a;
+}
+h2 {
+    padding: 1em;
+}
+header {
+    border-bottom: 2px solid var(--border-color);
+}
+body {
+    width: 90%;
+    background-color: whitesmoke;
+    margin: 15px auto;
+    border: 1px solid #000000;
+    height: 500px;
+}
+.column {
+    float: left;
+    padding: 5px;
+    height: 70%;
+    text-align: center;
+}
+#sidebarA {
+    width: 25%;
+    border-right: 2px solid var(--border-color);
+}
+#sidebarB {
+    width: 25%;
+}
+main {
+    width: 50%;
+    border-right: 2px solid var(--border-color);
+}
+footer {
+    clear: both;
+    border-top: 2px solid var(--border-color);
+}
