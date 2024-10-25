@@ -1,6 +1,6 @@
 /* create a fluid two column layout */
 :root {
-    --border-color: #ef9c00;
+    --border-color: #516859;
 }
 
 /* default styles */
@@ -10,21 +10,22 @@
     font-family: "Spinnaker", sans-serif;
 }
 html {
-    background-color: #facd8a;
-}
-h2 {
-    padding: 1em;
+    background: url("images/ghost-trees.jpg");
 }
 body {
     width: 90%;
-    background-color: whitesmoke;
+    background-color: #f8f8f8;
     margin: 15px auto;
-    border: 1px solid #000000;
 }
 
 /* header styling */
 header {
     border-bottom: 2px solid var(--border-color);
+}
+header > h2 {
+    font-size: 2em;
+    text-align: center;
+    padding: 1em;
 }
 header img {
     float: left;
@@ -35,28 +36,60 @@ header img {
     border-radius: 16px;
     opacity: .75;
 }
+
+/* main styling */
 main {
     width: 66%;
-    height: 350px;
+    height: 450px;
     float: right;
     border-left: 2px solid var(--border-color);
-    /* padding: 0 8px; */
-    /* border-collapse:separate; */
-
 }
-main > p {
+ul {
+    list-style: none;
+    padding: 0 1.2em;
+    /* line-height: 2em; */
+}
+li {
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: .3em 0;
+}
+main ul p {
+    line-height: 1.3em;
+    padding-left: 1.5em;
+    font-size: .85em;
+}
+
+/* aside styling */
+aside p {
     padding: 0 1em;
+    font-size: .85em;
+    text-align: center;
+    line-height: 1.3;
+}
+aside h2, main h2 {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 1em;
 }
 aside {
     width: 33%;
-    height: 350px;
+    height: 450px;
     float: left;
-    background: url("images/ghost-trees.jpg");
-    background-size: cover;
 }
-
 footer {
     clear: both;
     border-top: 2px solid var(--border-color);
     height: 15%;
+}
+footer > h2 {
+    font-size: 1em;
+    padding: 1em;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color: #92801b;
+    font-size: 1.2em;
+    font-style: italic;
 }
